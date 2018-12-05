@@ -55,8 +55,32 @@
     75%  { left: 80%; top: 0px;}
     100% { left: 95%; top: 0px;}
 }
-
+    #i2{
+        display: block;
+    margin-left: 0;
+    padding-top: 40px;
+    width: 5%;
+        position: relative;
+    -webkit-animation: mysecond 5s 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: mysecond 5s 5;
+    animation-direction: alternate;
     }
+    
+    @-webkit-keyframes mysecond {
+    0%   { left: 95%; top: 0px;}
+    25%  { left: 80%; top: 0px;}
+    50%  { left: 50%; top: 0px;}
+    75%  { left: 25%; top: 0px;}
+    100% { left: 0px; top: 0px;}
+}
+    #i1:hover{
+        display:none;
+    }
+    #i2:hover{
+        display:none;
+    }
+    
 </style>
 </head>
 <body>
@@ -67,5 +91,16 @@
 <a href="docs/eulerbernoullisumm.pdf">ACCESS FILE HERE</a>
 
 <img src="images/chicken.PNG" id="i1" alt="chicken">
+<br>
+<img src="images/chicken.PNG" id="i2" alt="chicken">
+<br>
+<img src="images/chicken.PNG" id="i1" alt="chicken">
+<br>
+<img src="images/chicken.PNG" id="i2" alt="chicken">
+<br>
+<img src="images/chicken.PNG" id="i1" alt="chicken">
+<br>
+<img src="images/chicken.PNG" id="i2" alt="chicken">
+<br>
 </body>
 </html>
