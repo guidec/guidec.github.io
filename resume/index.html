@@ -19,8 +19,13 @@ particlesJS();
 	
 body,
 html {
-    height: 100%
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
+	
 	
 #particles-js canvas {
     display: block;
@@ -34,14 +39,12 @@ html {
 }
 
 #particles-js {
-    z-index: 0;
-    position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
 	
 	
