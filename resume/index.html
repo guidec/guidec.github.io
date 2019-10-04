@@ -8,61 +8,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 <style>
-   /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
-   @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap');
+   @import url('https://fonts.googleapis.com/css?family=Roboto');
+   /*@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap');*/
     *{
         background-color: lightgrey;
         
-    }    
+    }  
+	
+body,
+html {
+    height: 100%
+}
+	
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
 #particles-js {
     width: 100%;
     height: 100%;
-    background-color: #437993;
-    /*background-image: url('');*/
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    position: absolute;
-    
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-}    
-	
-	
-    a{
-        display:block;
-        color: white;
-        font-family: arial;
-        text-align: center;
-        -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-        padding: 50px 0px 50px 0px;
-        width: 80px;
-        margin: 0 auto 0 auto;
-        text-decoration: none;
-    }
-    a:hover{
-        color:lightcoral;
-        -webkit-transform: rotate(360deg);
-          transform: rotate(360deg); 
-    }
-    h1{
-        text-align:center;
-        font-family: roboto; 
-    }
     
     
 </style>
 </head>
 <body>
-
+<div id="particles-js"></div>
 
 <h1>Guillaume de Cannart's Resume</h1>
 <br>
-<iframe src="docs/decannart_cv.pdf" width="100%" height="900px">
+<iframe src="docs/decannart_cv.pdf" width: auto height="900px">
 <br>
 
 
