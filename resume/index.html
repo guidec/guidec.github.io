@@ -75,19 +75,19 @@ h1 {
 	background-color: lightgrey;
 }	
 	
-.embed-css{
+.mobile-error{
 	display: none;
 }
 	
 	
 	
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 .iframe-css{
 	display:none;
 	}
-.embed-css{
+.mobile-error{
 	display: block;
-}*/
+}
 
 </style>
 </head>
@@ -96,10 +96,13 @@ h1 {
 <h1>Guillaume de Cannart's Resume</h1>
 </div>
 <div class="container">
-<iframe class="iframe-css" src="docs/decannart_cv.pdf" width="100%" height="900px"></iframe>
+<iframe class="iframe-css" src="docs/decannart_cv.pdf" width="100%"></iframe>
 </div>
 	
-
+<div class="mobile-error">
+	<p>This browser does not support PDFs.</p> Please download the PDF to view it: <a href="docs/decannart_cv.pdf">PDF</a>.</p>
+</div>
+	
 </div>
 
 <script type="text/javascript">
