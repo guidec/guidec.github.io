@@ -67,7 +67,7 @@ h1 {
 	margin: 0 auto;
 	}
 	
-.container{
+.desktop-container{
 	z-index: -15;
 	margin-top: 80px;
 	height: 1950px;
@@ -75,7 +75,7 @@ h1 {
 	background-color: lightgrey;
 }	
 	
-.mobile-error{
+.mobile-container{
 	display: none;
 }
 	
@@ -85,8 +85,15 @@ h1 {
 .iframe-css{
 	display:none;
 	}
-.mobile-error{
+.mobile-container{
 	display: block;
+	text-align: center;
+	background-color: lightgrey;
+	
+.desktop-container{
+	display:none;
+}	
+	
 }
 
 </style>
@@ -95,11 +102,11 @@ h1 {
 <div id="particles-js">
 <h1>Guillaume de Cannart's Resume</h1>
 </div>
-<div class="container">
+<div class="desktop-container">
 <iframe class="iframe-css" src="docs/decannart_cv.pdf" width="100%"></iframe>
 </div>
 	
-<div class="mobile-error">
+<div class="mobile-container">
 	<p>This browser does not support PDFs.</p> Please download the PDF to view it: <a href="docs/decannart_cv.pdf">PDF</a>.</p>
 </div>
 	
